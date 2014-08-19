@@ -1,0 +1,56 @@
+//
+//  Mixins
+//
+
+@mixin cube($width,$height,$depth,$color) {
+  background: $color;
+  position: relative;
+  perspective: 0;
+  transform-style: preserve-3d;
+  width: 0;
+  height: 0;
+  .front {
+    background: darken($color, 18%);
+    transform: rotateY(10deg) rotateX(5deg);
+    perspective-origin: 0% 0%;
+  }
+  .left {
+    background: darken($color, 10%);
+    transform: rotateY(-90deg);
+    transform-origin: right;
+  }
+  .right {
+    background: darken($color, 12%);
+    transform: rotateY(90deg);
+    transform-origin: left;
+  }
+  .top {
+    background: darken($color, 14%);
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+  }
+  .bottom {
+    background: darken($color, 16%);
+    transform: rotateX(-90deg);
+    transform-origin: top;
+  }
+  .back {
+    background: darken($color, 20%);
+    transform: translateZ(-$depth);
+  }
+}
+
+.cube {
+  @include cube(100px,100px,100px,teal);
+  margin: 0 auto;
+  animation: rotate 40s infinite;
+  animation-timing-function: linear;
+  img {
+    position: absolute;
+  }
+}
+
+@keyframes rotate {
+  0%   { transform: translateX(0) rotateY(0deg); }
+  100% { transform: translateX(0) rotateY(360deg); }
+}

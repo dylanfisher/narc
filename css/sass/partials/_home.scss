@@ -1,0 +1,162 @@
+//
+// Home
+//
+
+.shape-wrapper {
+  display: inline-block;
+  perspective: 800px;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  background: transparent;
+  font-size: 100%;
+}
+.face {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+.scene, .shape, .face, .face-wrapper, .cr {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.scene {
+  top: 50%;
+  left: 50%;
+  animation-timing-function: linear !important;
+
+  $time: 3;
+  &.animate1  { animation: rotate1  (40s + $time * 1) infinite; }
+  &.animate2  { animation: rotate2  (40s + $time * 2) infinite; }
+  &.animate3  { animation: rotate3  (40s + $time * 3) infinite; }
+  &.animate4  { animation: rotate4  (40s + $time * 4) infinite; }
+  &.animate5  { animation: rotate5  (40s + $time * 5) infinite; }
+  &.animate6  { animation: rotate6  (40s + $time * 6) infinite; }
+  &.animate7  { animation: rotate7  (40s + $time * 7) infinite; }
+  &.animate8  { animation: rotate8  (40s + $time * 8) infinite; }
+  &.animate9  { animation: rotate9  (40s + $time * 9) infinite; }
+  &.animate10 { animation: rotate10 (40s + $time * 10) infinite; }
+  &.animate11 { animation: rotate11 (40s + $time * 11) infinite; }
+  &.animate12 { animation: rotate12 (40s + $time * 12) infinite; }
+  &.animate13 { animation: rotate13 (40s + $time * 13) infinite; }
+  &.animate14 { animation: rotate14 (40s + $time * 14) infinite; }
+  &.animate15 { animation: rotate15 (40s + $time * 15) infinite; }
+  &.animate16 { animation: rotate16 (40s + $time * 16) infinite; }
+  &.animate17 { animation: rotate17 (40s + $time * 17) infinite; }
+  &.animate18 { animation: rotate18 (40s + $time * 18) infinite; }
+  &.animate19 { animation: rotate19 (40s + $time * 19) infinite; }
+  &.animate20 { animation: rotate20 (40s + $time * 20) infinite; }
+}
+
+$deg: 360deg;
+@keyframes rotate1 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100%  { transform: rotateX($deg * 1) rotateY($deg * 1); } }
+@keyframes rotate2 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100%  { transform: rotateX($deg * 1) rotateY($deg * 2); } }
+@keyframes rotate3 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100%  { transform: rotateX($deg * 2) rotateY($deg * 1); } }
+@keyframes rotate4 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100%  { transform: rotateX($deg * 2) rotateY($deg * 2); } }
+@keyframes rotate5 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100%  { transform: rotateX($deg * 2) rotateY($deg * 3); } }
+@keyframes rotate6 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100%  { transform: rotateX($deg * 3) rotateY($deg * 2); } }
+@keyframes rotate7 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100%  { transform: rotateX($deg * 3) rotateY($deg * 3); } }
+@keyframes rotate8 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100%  { transform: rotateX($deg * 4) rotateY($deg * 2); } }
+@keyframes rotate9 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100%  { transform: rotateX($deg * 4) rotateY($deg * 4); } }
+@keyframes rotate10 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100% { transform: rotateX($deg * 4) rotateY($deg * 3); } }
+@keyframes rotate11 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100% { transform: rotateX($deg * 5) rotateY($deg * 4); } }
+@keyframes rotate12 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100% { transform: rotateX($deg * 5) rotateY($deg * 3); } }
+@keyframes rotate13 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100% { transform: rotateX($deg * 5) rotateY($deg * 5); } }
+@keyframes rotate14 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100% { transform: rotateX($deg * 6) rotateY($deg * 4); } }
+@keyframes rotate15 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100% { transform: rotateX($deg * 6) rotateY($deg * 5); } }
+@keyframes rotate16 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100% { transform: rotateX($deg * 6) rotateY($deg * 4); } }
+@keyframes rotate17 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100% { transform: rotateX($deg * 7) rotateY($deg * 6); } }
+@keyframes rotate18 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100% { transform: rotateX($deg * 7) rotateY($deg * 5); } }
+@keyframes rotate19 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100% { transform: rotateX($deg * 7) rotateY($deg * 6); } }
+@keyframes rotate20 { 0% { transform: rotateX(0deg) rotateY(0deg); } 100% { transform: rotateX($deg * 8) rotateY($deg * 5); } }
+
+
+.shape {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform-origin: 50%;
+}
+.face, .face-wrapper {
+  overflow: hidden;
+  transform-origin: 0 0;
+  backface-visibility: hidden;
+  /* hidden by default, prevent blinking and other weird rendering glitchs */
+}
+.face {
+  background-size: 100% 100%!important;
+  background-position: center;
+}
+.face-wrapper .face {
+  left: 100%;
+  width: 100%;
+  height: 100%
+}
+.photon-shader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+.side {
+  left: 50%;
+}
+.cr, .cr .side {
+  height: 100%;
+}
+[class*="cuboid"] .ft, [class*="cuboid"] .bk {
+  width: 100%;
+  height: 100%;
+}
+[class*="cuboid"] .bk {
+  left: 100%;
+}
+[class*="cuboid"] .rt {
+  transform: rotateY(-90deg) translateX(-50%);
+}
+[class*="cuboid"] .lt {
+  transform: rotateY(90deg) translateX(-50%);
+}
+[class*="cuboid"] .tp {
+  transform: rotateX(90deg) translateY(-50%);
+}
+[class*="cuboid"] .bm {
+  transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="cuboid"] .lt {
+  left: 100%;
+}
+[class*="cuboid"] .bm {
+  top: 100%;
+}
+/* .cub-1 styles */
+.cub-1 {
+  transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:8em;
+  height:10em;
+  margin:-5em 0 0 -4em;
+  transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
+
+  &:hover {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+}
+.cub-1 .ft {
+  transform:translateZ(3em);
+}
+.cub-1 .bk {
+  transform:translateZ(-3em) rotateY(180deg);
+}
+.cub-1 .rt, .cub-1 .lt {
+  width:6em;
+  height:10em;
+}
+.cub-1 .tp, .cub-1 .bm {
+  width:8em;
+  height:6em;
+}
+.cub-1 .face {
+  background-color:#FFFFFF;
+}
