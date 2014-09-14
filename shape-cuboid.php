@@ -1,4 +1,6 @@
 <?php
+  $count = 0;
+
   while( have_rows('cuboid') ): the_row();
     $color = get_sub_field('color');
     if(empty($color)){
