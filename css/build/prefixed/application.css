@@ -865,6 +865,65 @@ nav h2 {
   display: none;
 }
 
+.entry-content .photon-shader:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.entry-content .tp .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.055);
+}
+
+.entry-content .ft .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.066);
+}
+
+.entry-content .rt .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.132);
+}
+
+.entry-content .bk .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.198);
+}
+
+.entry-content .lt .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.264);
+}
+
+.entry-content .bm .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.33);
+}
+
+.entry-content .shape:hover .tp .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.0225);
+}
+
+.entry-content .shape:hover .ft .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.027);
+}
+
+.entry-content .shape:hover .rt .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.054);
+}
+
+.entry-content .shape:hover .bk .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.081);
+}
+
+.entry-content .shape:hover .lt .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.108);
+}
+
+.entry-content .shape:hover .bm .photon-shader:after {
+  background-color: rgba(0, 0, 0, 0.135);
+}
+
 .scene {
   top: 50%;
   left: 50%;
@@ -1598,168 +1657,6 @@ nav h2 {
   background-color: #FFFFFF;
 }
 
-.shape-prism {
-  /* .pri-1 styles */
-}
-
-.shape-prism .face {
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
-}
-
-.shape-prism .scene,
-.shape-prism .shape,
-.shape-prism .face,
-.shape-prism .face-wrapper,
-.shape-prism .cr {
-  position: absolute;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.shape-prism .scene {
-  width: 80em;
-  height: 80em;
-  top: 50%;
-  left: 50%;
-  margin: -40em 0 0 -40em;
-}
-
-.shape-prism .shape {
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  -webkit-transform-origin: 50%;
-  transform-origin: 50%;
-}
-
-.shape-prism .face,
-.shape-prism .face-wrapper {
-  overflow: hidden;
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  /* hidden by default, prevent blinking and other weird rendering glitchs */
-}
-
-.shape-prism .face {
-  background-size: 100% 100% !important;
-  background-position: center;
-}
-
-.shape-prism .face-wrapper .face {
-  left: 100%;
-  width: 100%;
-  height: 100%;
-}
-
-.shape-prism .photon-shader {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.shape-prism .side {
-  left: 50%;
-}
-
-.shape-prism .cr,
-.shape-prism .cr .side {
-  height: 100%;
-}
-
-.shape-prism [class*="prism"] .ft,
-.shape-prism [class*="prism"] .bk {
-  width: 100%;
-  height: 100%;
-}
-
-.shape-prism [class*="prism"] .bk {
-  left: 100%;
-}
-
-.shape-prism [class*="prism"] .rt {
-  -webkit-transform: rotateY(-90deg) translateX(-50%);
-  transform: rotateY(-90deg) translateX(-50%);
-}
-
-.shape-prism [class*="prism"] .lt {
-  -webkit-transform: rotateY(90deg) translateX(-50%);
-  transform: rotateY(90deg) translateX(-50%);
-}
-
-.shape-prism [class*="prism"] .bm {
-  -webkit-transform: rotateX(-90deg) translateY(-50%);
-  transform: rotateX(-90deg) translateY(-50%);
-}
-
-.shape-prism [class*="prism"] .lt {
-  left: 100%;
-}
-
-.shape-prism [class*="prism"] .bm {
-  top: 100%;
-}
-
-.shape-prism [class*="prism"] .rt .face {
-  left: -100%;
-  -webkit-transform-origin: 100% 0;
-  transform-origin: 100% 0;
-}
-
-.shape-prism .pri-1 {
-  -webkit-transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  opacity: 1;
-  width: 8em;
-  height: 10em;
-  margin: -5em 0 0 -4em;
-}
-
-.shape-prism .pri-1 .rt .face {
-  -webkit-transform: rotateZ(-30.96376deg);
-  transform: rotateZ(-30.96376deg);
-}
-
-.shape-prism .pri-1 .lt .face {
-  -webkit-transform: rotateZ(30.96376deg);
-  transform: rotateZ(30.96376deg);
-}
-
-.shape-prism .pri-1 .ft {
-  height: 11.661903789690601em;
-  -webkit-transform: translateZ(-3em) rotateX(30.96376deg);
-  transform: translateZ(-3em) rotateX(30.96376deg);
-}
-
-.shape-prism .pri-1 .bk {
-  -webkit-transform: translateZ(-3em) rotateY(180deg);
-  transform: translateZ(-3em) rotateY(180deg);
-}
-
-.shape-prism .pri-1 .rt,
-.shape-prism .pri-1 .lt {
-  width: 6em;
-  height: 10em;
-}
-
-.shape-prism .pri-1 .rt .face,
-.shape-prism .pri-1 .lt .face {
-  height: 11.661903789690601em;
-}
-
-.shape-prism .pri-1 .bm {
-  width: 8em;
-  height: 6em;
-}
-
-.shape-prism .pri-1 .face {
-  background-color: #FFFFFF;
-}
-
 .shape-cuboid-long {
   /* .cub-1 styles */
 }
@@ -2045,6 +1942,168 @@ nav h2 {
 }
 
 .shape-pyramid .pyr-1 .face {
+  background-color: #FFFFFF;
+}
+
+.shape-prism {
+  /* .pri-1 styles */
+}
+
+.shape-prism .face {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.shape-prism .scene,
+.shape-prism .shape,
+.shape-prism .face,
+.shape-prism .face-wrapper,
+.shape-prism .cr {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.shape-prism .scene {
+  width: 80em;
+  height: 80em;
+  top: 50%;
+  left: 50%;
+  margin: -40em 0 0 -40em;
+}
+
+.shape-prism .shape {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+}
+
+.shape-prism .face,
+.shape-prism .face-wrapper {
+  overflow: hidden;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* hidden by default, prevent blinking and other weird rendering glitchs */
+}
+
+.shape-prism .face {
+  background-size: 100% 100% !important;
+  background-position: center;
+}
+
+.shape-prism .face-wrapper .face {
+  left: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.shape-prism .photon-shader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shape-prism .side {
+  left: 50%;
+}
+
+.shape-prism .cr,
+.shape-prism .cr .side {
+  height: 100%;
+}
+
+.shape-prism [class*="prism"] .ft,
+.shape-prism [class*="prism"] .bk {
+  width: 100%;
+  height: 100%;
+}
+
+.shape-prism [class*="prism"] .bk {
+  left: 100%;
+}
+
+.shape-prism [class*="prism"] .rt {
+  -webkit-transform: rotateY(-90deg) translateX(-50%);
+  transform: rotateY(-90deg) translateX(-50%);
+}
+
+.shape-prism [class*="prism"] .lt {
+  -webkit-transform: rotateY(90deg) translateX(-50%);
+  transform: rotateY(90deg) translateX(-50%);
+}
+
+.shape-prism [class*="prism"] .bm {
+  -webkit-transform: rotateX(-90deg) translateY(-50%);
+  transform: rotateX(-90deg) translateY(-50%);
+}
+
+.shape-prism [class*="prism"] .lt {
+  left: 100%;
+}
+
+.shape-prism [class*="prism"] .bm {
+  top: 100%;
+}
+
+.shape-prism [class*="prism"] .rt .face {
+  left: -100%;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+
+.shape-prism .pri-1 {
+  -webkit-transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity: 1;
+  width: 8em;
+  height: 10em;
+  margin: -5em 0 0 -4em;
+}
+
+.shape-prism .pri-1 .rt .face {
+  -webkit-transform: rotateZ(-30.96376deg);
+  transform: rotateZ(-30.96376deg);
+}
+
+.shape-prism .pri-1 .lt .face {
+  -webkit-transform: rotateZ(30.96376deg);
+  transform: rotateZ(30.96376deg);
+}
+
+.shape-prism .pri-1 .ft {
+  height: 11.661903789690601em;
+  -webkit-transform: translateZ(-3em) rotateX(30.96376deg);
+  transform: translateZ(-3em) rotateX(30.96376deg);
+}
+
+.shape-prism .pri-1 .bk {
+  -webkit-transform: translateZ(-3em) rotateY(180deg);
+  transform: translateZ(-3em) rotateY(180deg);
+}
+
+.shape-prism .pri-1 .rt,
+.shape-prism .pri-1 .lt {
+  width: 6em;
+  height: 10em;
+}
+
+.shape-prism .pri-1 .rt .face,
+.shape-prism .pri-1 .lt .face {
+  height: 11.661903789690601em;
+}
+
+.shape-prism .pri-1 .bm {
+  width: 8em;
+  height: 6em;
+}
+
+.shape-prism .pri-1 .face {
   background-color: #FFFFFF;
 }
 
