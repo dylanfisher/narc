@@ -9,7 +9,7 @@ Template Name: Home Page
       <div id="page-<?php the_ID() ?>" <?php post_class() ?>>
         <div class="entry-content">
 
-        <?php $categories = get_categories( $args ); ?>
+        <?php $categories = get_categories(); ?>
 
         <?php
           foreach ($categories as $category):
