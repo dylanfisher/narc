@@ -6,6 +6,11 @@ html {
   overflow: hidden;
 }
 
+header {
+  position: relative;
+  z-index: -1;
+}
+
 h1 {
   font-size: 200px;
   position: fixed;
@@ -41,4 +46,19 @@ nav h2 {
   transform-origin: top left;
   transform: rotate(270deg) translate(-50%);
   margin: 0;
+}
+
+.title-wrapper {
+  width: $shape-width;
+  height: $shape-width;
+  display: table;
+  text-align: center;
+  float: left;
+  .title {
+    display: table-cell;
+    font-size: 50px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    word-break: break-word;
+  }
 }
