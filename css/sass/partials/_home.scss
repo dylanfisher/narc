@@ -2,6 +2,25 @@
 // Home
 //
 
+.category-wrapper {
+  transition: opacity 0.3s;
+  display: block;
+}
+
+.category-wrapper-hover {
+  .category-wrapper:not(.active){
+    opacity: 0.2;
+  }
+}
+
+.title {
+  position: relative;
+}
+
+.title span {
+  cursor: pointer;
+}
+
 .shape-wrapper {
   display: inline-block;
   perspective: 800px;
@@ -12,9 +31,15 @@
   font-size: 100%;
   position: relative;
   float: left;
+
+  &.active {
+    overflow: visible;
+  }
 }
 
 .entry-content {
+  overflow: hidden;
+
   .face {
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
   }

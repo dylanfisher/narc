@@ -1,5 +1,12 @@
 html {
   font-family: 'GtwalsheimThin', sans-serif;
+  background-image: -webkit-gradient( linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(1, #C6C6C6) );
+  background-image: -o-linear-gradient(right bottom, #FFFFFF 0%, #C6C6C6 100%);
+  background-image: -moz-linear-gradient(right bottom, #FFFFFF 0%, #C6C6C6 100%);
+  background-image: -webkit-linear-gradient(right bottom, #FFFFFF 0%, #C6C6C6 100%);
+  background-image: -ms-linear-gradient(right bottom, #FFFFFF 0%, #C6C6C6 100%);
+  background-image: linear-gradient(to right bottom, #FFFFFF 0%, #C6C6C6 100%);
+  min-height: 100%;
 }
 
 .lightbox_open {
@@ -49,7 +56,9 @@ nav h2 {
 }
 
 .title-wrapper {
-  width: $shape-width;
+  width: auto;
+  max-width: 420px;
+  padding: 20px;
   height: $shape-width;
   display: table;
   text-align: center;
@@ -60,5 +69,19 @@ nav h2 {
     vertical-align: middle;
     text-transform: uppercase;
     word-break: break-word;
+  }
+}
+
+.credits {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  transform: translate(-50% 0);
+  font-size: 20px;
+  text-transform: uppercase;
+
+  a {
+    color: #000;
+    text-decoration: none;
   }
 }
