@@ -92,6 +92,7 @@ $(function(){
 
 narc.open_lightbox = function(num){
   $('body').addClass('lightbox-open').prepend('<div class="lightbox lightbox-' + num + '"><div class="lightbox-content-wrapper"><div class="lightbox-content"></div></div></div>');
+  $('.lightbox').transition({opacity: 1}, 200);
   if(num == '2'){
     $('body').addClass('lightbox-2-open');
   }
@@ -99,7 +100,9 @@ narc.open_lightbox = function(num){
 
 narc.close_lightbox = function(){
   if($('.lightbox').length){
-    $('.lightbox').first().remove();
+    $('.lightbox').first().transition({opacity: 0}, 200, function(){
+      $('.lightbox').first().remove();
+    });
     $('body').removeClass('lightbox-2-open');
     if(!$('.lightbox').length){
       $('body').removeClass('lightbox-open');
@@ -142,7 +145,7 @@ narc.forceRedraw = function(){
 narc.checkImageOverflow = function(){
   if(narc.isLightbox2Open()){
     if($('.lightbox-2 img.active').height() > $(window).height()){
-      $('.lightbox-2 .lightbox-content').css({transform: 'none', position: 'static'});
+      $('.lightbox-2 .lightbox-content').css({transform: 'translate(0, 0)', position: 'static'});
     } else {
       $('.lightbox-2 .lightbox-content').css({transform: '', position: ''});
     }

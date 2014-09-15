@@ -5,6 +5,8 @@ body {
 }
 
 .lightbox {
+  opacity: 0;
+  transition: opacity .3s;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,6 +21,10 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  &.active {
+    opacity: 1;
+  }
 
   &.lightbox-2 { z-index: 2; }
   &.lightbox-3 { z-index: 3; }

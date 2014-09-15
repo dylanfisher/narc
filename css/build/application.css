@@ -1489,6 +1489,8 @@ body.lightbox-open {
 }
 
 .lightbox {
+  opacity: 0;
+  transition: opacity .3s;
   position: fixed;
   top: 0;
   left: 0;
@@ -1502,6 +1504,9 @@ body.lightbox-open {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.lightbox.active {
+  opacity: 1;
 }
 .lightbox.lightbox-2 {
   z-index: 2;
