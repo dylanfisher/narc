@@ -826,8 +826,15 @@ nav h2 {
   overflow: visible;
 }
 
+.shape-inner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 .entry-content {
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .entry-content .face {
@@ -1530,11 +1537,11 @@ nav h2 {
 }
 
 .shape-cuboid .scene {
-  width: 80em;
-  height: 80em;
+  width: 260px;
+  height: 260px;
   top: 50%;
   left: 50%;
-  margin: -40em 0 0 -40em;
+  margin: -130px 0 0 -130px;
 }
 
 .shape-cuboid .shape {
@@ -1676,11 +1683,11 @@ nav h2 {
 }
 
 .shape-cuboid-long .scene {
-  width: 80em;
-  height: 80em;
+  width: 260px;
+  height: 260px;
   top: 50%;
   left: 50%;
-  margin: -40em 0 0 -40em;
+  margin: -130px 0 0 -130px;
 }
 
 .shape-cuboid-long .shape {
@@ -1822,11 +1829,11 @@ nav h2 {
 }
 
 .shape-pyramid .scene {
-  width: 80em;
-  height: 80em;
+  width: 260px;
+  height: 260px;
   top: 50%;
   left: 50%;
-  margin: -40em 0 0 -40em;
+  margin: -130px 0 0 -130px;
 }
 
 .shape-pyramid .shape {
@@ -1964,11 +1971,11 @@ nav h2 {
 }
 
 .shape-prism .scene {
-  width: 80em;
-  height: 80em;
+  width: 260px;
+  height: 260px;
   top: 50%;
   left: 50%;
-  margin: -40em 0 0 -40em;
+  margin: -130px 0 0 -130px;
 }
 
 .shape-prism .shape {

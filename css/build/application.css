@@ -723,8 +723,15 @@ nav h2 {
   overflow: visible;
 }
 
+.shape-inner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 .entry-content {
   overflow: hidden;
+  min-height: 100vh;
 }
 .entry-content .face {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
@@ -1071,11 +1078,11 @@ nav h2 {
   transform-style: preserve-3d;
 }
 .shape-cuboid .scene {
-  width: 80em;
-  height: 80em;
+  width: 260px;
+  height: 260px;
   top: 50%;
   left: 50%;
-  margin: -40em 0 0 -40em;
+  margin: -130px 0 0 -130px;
 }
 .shape-cuboid .shape {
   top: 50%;
@@ -1173,11 +1180,11 @@ nav h2 {
   transform-style: preserve-3d;
 }
 .shape-cuboid-long .scene {
-  width: 80em;
-  height: 80em;
+  width: 260px;
+  height: 260px;
   top: 50%;
   left: 50%;
-  margin: -40em 0 0 -40em;
+  margin: -130px 0 0 -130px;
 }
 .shape-cuboid-long .shape {
   top: 50%;
@@ -1275,11 +1282,11 @@ nav h2 {
   transform-style: preserve-3d;
 }
 .shape-pyramid .scene {
-  width: 80em;
-  height: 80em;
+  width: 260px;
+  height: 260px;
   top: 50%;
   left: 50%;
-  margin: -40em 0 0 -40em;
+  margin: -130px 0 0 -130px;
 }
 .shape-pyramid .shape {
   top: 50%;
@@ -1375,11 +1382,11 @@ nav h2 {
   transform-style: preserve-3d;
 }
 .shape-prism .scene {
-  width: 80em;
-  height: 80em;
+  width: 260px;
+  height: 260px;
   top: 50%;
   left: 50%;
-  margin: -40em 0 0 -40em;
+  margin: -130px 0 0 -130px;
 }
 .shape-prism .shape {
   top: 50%;
