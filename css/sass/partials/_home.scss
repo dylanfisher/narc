@@ -110,27 +110,28 @@
   left: 50%;
   animation-timing-function: linear !important;
 
-  $time: 3;
-  &.animate1  { animation: rotate1  (40s + $time * 1) infinite; }
-  &.animate2  { animation: rotate2  (40s + $time * 2) infinite; }
-  &.animate3  { animation: rotate3  (40s + $time * 3) infinite; }
-  &.animate4  { animation: rotate4  (40s + $time * 4) infinite; }
-  &.animate5  { animation: rotate5  (40s + $time * 5) infinite; }
-  &.animate6  { animation: rotate6  (40s + $time * 6) infinite; }
-  &.animate7  { animation: rotate7  (40s + $time * 7) infinite; }
-  &.animate8  { animation: rotate8  (40s + $time * 8) infinite; }
-  &.animate9  { animation: rotate9  (40s + $time * 9) infinite; }
-  &.animate10 { animation: rotate10 (40s + $time * 10) infinite; }
-  &.animate11 { animation: rotate11 (40s + $time * 11) infinite; }
-  &.animate12 { animation: rotate12 (40s + $time * 12) infinite; }
-  &.animate13 { animation: rotate13 (40s + $time * 13) infinite; }
-  &.animate14 { animation: rotate14 (40s + $time * 14) infinite; }
-  &.animate15 { animation: rotate15 (40s + $time * 15) infinite; }
-  &.animate16 { animation: rotate16 (40s + $time * 16) infinite; }
-  &.animate17 { animation: rotate17 (40s + $time * 17) infinite; }
-  &.animate18 { animation: rotate18 (40s + $time * 18) infinite; }
-  &.animate19 { animation: rotate19 (40s + $time * 19) infinite; }
-  &.animate20 { animation: rotate20 (40s + $time * 20) infinite; }
+  $base-time: 240s;
+  $time: 3s;
+  &.animate1  { animation: rotate1  ($base-time + $time * 1) infinite; }
+  &.animate2  { animation: rotate2  ($base-time + $time * 2) infinite; }
+  &.animate3  { animation: rotate3  ($base-time + $time * 3) infinite; }
+  &.animate4  { animation: rotate4  ($base-time + $time * 4) infinite; }
+  &.animate5  { animation: rotate5  ($base-time + $time * 5) infinite; }
+  &.animate6  { animation: rotate6  ($base-time + $time * 6) infinite; }
+  &.animate7  { animation: rotate7  ($base-time + $time * 7) infinite; }
+  &.animate8  { animation: rotate8  ($base-time + $time * 8) infinite; }
+  &.animate9  { animation: rotate9  ($base-time + $time * 9) infinite; }
+  &.animate10 { animation: rotate10 ($base-time + $time * 10) infinite; }
+  &.animate11 { animation: rotate11 ($base-time + $time * 11) infinite; }
+  &.animate12 { animation: rotate12 ($base-time + $time * 12) infinite; }
+  &.animate13 { animation: rotate13 ($base-time + $time * 13) infinite; }
+  &.animate14 { animation: rotate14 ($base-time + $time * 14) infinite; }
+  &.animate15 { animation: rotate15 ($base-time + $time * 15) infinite; }
+  &.animate16 { animation: rotate16 ($base-time + $time * 16) infinite; }
+  &.animate17 { animation: rotate17 ($base-time + $time * 17) infinite; }
+  &.animate18 { animation: rotate18 ($base-time + $time * 18) infinite; }
+  &.animate19 { animation: rotate19 ($base-time + $time * 19) infinite; }
+  &.animate20 { animation: rotate20 ($base-time + $time * 20) infinite; }
 }
 
 $deg: 360deg;

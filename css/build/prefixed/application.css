@@ -939,103 +939,103 @@ nav h2 {
 }
 
 .scene.animate1 {
-  -webkit-animation: rotate1 43s infinite;
-  animation: rotate1 43s infinite;
+  -webkit-animation: rotate1 243s infinite;
+  animation: rotate1 243s infinite;
 }
 
 .scene.animate2 {
-  -webkit-animation: rotate2 46s infinite;
-  animation: rotate2 46s infinite;
+  -webkit-animation: rotate2 246s infinite;
+  animation: rotate2 246s infinite;
 }
 
 .scene.animate3 {
-  -webkit-animation: rotate3 49s infinite;
-  animation: rotate3 49s infinite;
+  -webkit-animation: rotate3 249s infinite;
+  animation: rotate3 249s infinite;
 }
 
 .scene.animate4 {
-  -webkit-animation: rotate4 52s infinite;
-  animation: rotate4 52s infinite;
+  -webkit-animation: rotate4 252s infinite;
+  animation: rotate4 252s infinite;
 }
 
 .scene.animate5 {
-  -webkit-animation: rotate5 55s infinite;
-  animation: rotate5 55s infinite;
+  -webkit-animation: rotate5 255s infinite;
+  animation: rotate5 255s infinite;
 }
 
 .scene.animate6 {
-  -webkit-animation: rotate6 58s infinite;
-  animation: rotate6 58s infinite;
+  -webkit-animation: rotate6 258s infinite;
+  animation: rotate6 258s infinite;
 }
 
 .scene.animate7 {
-  -webkit-animation: rotate7 61s infinite;
-  animation: rotate7 61s infinite;
+  -webkit-animation: rotate7 261s infinite;
+  animation: rotate7 261s infinite;
 }
 
 .scene.animate8 {
-  -webkit-animation: rotate8 64s infinite;
-  animation: rotate8 64s infinite;
+  -webkit-animation: rotate8 264s infinite;
+  animation: rotate8 264s infinite;
 }
 
 .scene.animate9 {
-  -webkit-animation: rotate9 67s infinite;
-  animation: rotate9 67s infinite;
+  -webkit-animation: rotate9 267s infinite;
+  animation: rotate9 267s infinite;
 }
 
 .scene.animate10 {
-  -webkit-animation: rotate10 70s infinite;
-  animation: rotate10 70s infinite;
+  -webkit-animation: rotate10 270s infinite;
+  animation: rotate10 270s infinite;
 }
 
 .scene.animate11 {
-  -webkit-animation: rotate11 73s infinite;
-  animation: rotate11 73s infinite;
+  -webkit-animation: rotate11 273s infinite;
+  animation: rotate11 273s infinite;
 }
 
 .scene.animate12 {
-  -webkit-animation: rotate12 76s infinite;
-  animation: rotate12 76s infinite;
+  -webkit-animation: rotate12 276s infinite;
+  animation: rotate12 276s infinite;
 }
 
 .scene.animate13 {
-  -webkit-animation: rotate13 79s infinite;
-  animation: rotate13 79s infinite;
+  -webkit-animation: rotate13 279s infinite;
+  animation: rotate13 279s infinite;
 }
 
 .scene.animate14 {
-  -webkit-animation: rotate14 82s infinite;
-  animation: rotate14 82s infinite;
+  -webkit-animation: rotate14 282s infinite;
+  animation: rotate14 282s infinite;
 }
 
 .scene.animate15 {
-  -webkit-animation: rotate15 85s infinite;
-  animation: rotate15 85s infinite;
+  -webkit-animation: rotate15 285s infinite;
+  animation: rotate15 285s infinite;
 }
 
 .scene.animate16 {
-  -webkit-animation: rotate16 88s infinite;
-  animation: rotate16 88s infinite;
+  -webkit-animation: rotate16 288s infinite;
+  animation: rotate16 288s infinite;
 }
 
 .scene.animate17 {
-  -webkit-animation: rotate17 91s infinite;
-  animation: rotate17 91s infinite;
+  -webkit-animation: rotate17 291s infinite;
+  animation: rotate17 291s infinite;
 }
 
 .scene.animate18 {
-  -webkit-animation: rotate18 94s infinite;
-  animation: rotate18 94s infinite;
+  -webkit-animation: rotate18 294s infinite;
+  animation: rotate18 294s infinite;
 }
 
 .scene.animate19 {
-  -webkit-animation: rotate19 97s infinite;
-  animation: rotate19 97s infinite;
+  -webkit-animation: rotate19 297s infinite;
+  animation: rotate19 297s infinite;
 }
 
 .scene.animate20 {
-  -webkit-animation: rotate20 100s infinite;
-  animation: rotate20 100s infinite;
+  -webkit-animation: rotate20 300s infinite;
+  animation: rotate20 300s infinite;
 }
 
 @-webkit-keyframes rotate1 {
@@ -2129,6 +2129,11 @@ body.lightbox-open {
   width: 100%;
   height: 100%;
   z-index: 1;
+  -webkit-overflow-scrolling: touch;
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, white), color-stop(1, #c6c6c6));
+  background-image: -webkit-linear-gradient(left top, white 0%, #c6c6c6 100%);
+  background-image: -webkit-linear-gradient(right bottom, white 0%, #c6c6c6 100%);
+  background-image: linear-gradient(to left top, white 0%, #c6c6c6 100%);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -2160,6 +2165,8 @@ body.lightbox-open {
 .lightbox img {
   max-width: 100%;
   height: auto;
+  margin: 5px;
+  vertical-align: top;
 }
 
 .lightbox-content-wrapper {

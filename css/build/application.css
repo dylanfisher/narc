@@ -807,64 +807,64 @@ nav h2 {
   animation-timing-function: linear !important;
 }
 .scene.animate1 {
-  animation: rotate1 43s infinite;
+  animation: rotate1 243s infinite;
 }
 .scene.animate2 {
-  animation: rotate2 46s infinite;
+  animation: rotate2 246s infinite;
 }
 .scene.animate3 {
-  animation: rotate3 49s infinite;
+  animation: rotate3 249s infinite;
 }
 .scene.animate4 {
-  animation: rotate4 52s infinite;
+  animation: rotate4 252s infinite;
 }
 .scene.animate5 {
-  animation: rotate5 55s infinite;
+  animation: rotate5 255s infinite;
 }
 .scene.animate6 {
-  animation: rotate6 58s infinite;
+  animation: rotate6 258s infinite;
 }
 .scene.animate7 {
-  animation: rotate7 61s infinite;
+  animation: rotate7 261s infinite;
 }
 .scene.animate8 {
-  animation: rotate8 64s infinite;
+  animation: rotate8 264s infinite;
 }
 .scene.animate9 {
-  animation: rotate9 67s infinite;
+  animation: rotate9 267s infinite;
 }
 .scene.animate10 {
-  animation: rotate10 70s infinite;
+  animation: rotate10 270s infinite;
 }
 .scene.animate11 {
-  animation: rotate11 73s infinite;
+  animation: rotate11 273s infinite;
 }
 .scene.animate12 {
-  animation: rotate12 76s infinite;
+  animation: rotate12 276s infinite;
 }
 .scene.animate13 {
-  animation: rotate13 79s infinite;
+  animation: rotate13 279s infinite;
 }
 .scene.animate14 {
-  animation: rotate14 82s infinite;
+  animation: rotate14 282s infinite;
 }
 .scene.animate15 {
-  animation: rotate15 85s infinite;
+  animation: rotate15 285s infinite;
 }
 .scene.animate16 {
-  animation: rotate16 88s infinite;
+  animation: rotate16 288s infinite;
 }
 .scene.animate17 {
-  animation: rotate17 91s infinite;
+  animation: rotate17 291s infinite;
 }
 .scene.animate18 {
-  animation: rotate18 94s infinite;
+  animation: rotate18 294s infinite;
 }
 .scene.animate19 {
-  animation: rotate19 97s infinite;
+  animation: rotate19 297s infinite;
 }
 .scene.animate20 {
-  animation: rotate20 100s infinite;
+  animation: rotate20 300s infinite;
 }
 
 @keyframes rotate1 {
@@ -1498,6 +1498,13 @@ body.lightbox-open {
   width: 100%;
   height: 100%;
   z-index: 1;
+  -webkit-overflow-scrolling: touch;
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, white), color-stop(1, #c6c6c6));
+  background-image: -o-linear-gradient(left top, white 0%, #c6c6c6 100%);
+  background-image: -moz-linear-gradient(left top, white 0%, #c6c6c6 100%);
+  background-image: -webkit-linear-gradient(left top, white 0%, #c6c6c6 100%);
+  background-image: -ms-linear-gradient(left top, white 0%, #c6c6c6 100%);
+  background-image: linear-gradient(to left top, white 0%, #c6c6c6 100%);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1523,6 +1530,8 @@ body.lightbox-open {
 .lightbox img {
   max-width: 100%;
   height: auto;
+  margin: 5px;
+  vertical-align: top;
 }
 
 .lightbox-content-wrapper {

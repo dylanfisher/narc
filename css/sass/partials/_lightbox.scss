@@ -14,6 +14,14 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
+  -webkit-overflow-scrolling: touch;
+
+  background-image: -webkit-gradient( linear, right bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #C6C6C6) );
+  background-image: -o-linear-gradient(left top, #FFFFFF 0%, #C6C6C6 100%);
+  background-image: -moz-linear-gradient(left top, #FFFFFF 0%, #C6C6C6 100%);
+  background-image: -webkit-linear-gradient(left top, #FFFFFF 0%, #C6C6C6 100%);
+  background-image: -ms-linear-gradient(left top, #FFFFFF 0%, #C6C6C6 100%);
+  background-image: linear-gradient(to left top, #FFFFFF 0%, #C6C6C6 100%);
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -34,6 +42,8 @@ body {
   img {
     max-width: 100%;
     height: auto;
+    margin: 5px;
+    vertical-align: top;
   }
 }
 
